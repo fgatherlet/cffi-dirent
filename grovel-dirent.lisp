@@ -26,8 +26,8 @@
 
 (cstruct dirent "struct dirent"
 	 (d-ino "d_ino" :type ino-t)
-	 #+darwin(d-off "d_seekoff" :type off-t)
-	 #-darwin(d-off "d_off" :type off-t)
+	 ;;#+darwin(d-off "d_seekoff" :type off-t)
+	 ;;#-darwin(d-off "d_off" :type off-t)
 	 (d-reclen "d_reclen" :type :unsigned-short)
 	 (d-type "d_type" :type :unsigned-char)
 	 (d-name "d_name" :type :char :count 256))

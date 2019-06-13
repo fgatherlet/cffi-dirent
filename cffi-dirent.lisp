@@ -98,8 +98,8 @@
 (defun dirent-ino (dirent)
   (foreign-slot-value dirent '(:struct dirent) 'd-ino))
 
-(defun dirent-off (dirent)
-  (foreign-slot-value dirent '(:struct dirent) 'd-off))
+;;(defun dirent-off (dirent)
+;; (foreign-slot-value dirent '(:struct dirent) 'd-off))
 
 (defun dirent-reclen (dirent)
   (foreign-slot-value dirent '(:struct dirent) 'd-reclen))
